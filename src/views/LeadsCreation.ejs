@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Lead</title>
+</head>
+<body>
+    <h1>Novo Lead</h1>
+    <form action="/novoLead" method="POST">
+    <label>Nome
+      <input type="text" name="nome" />
+    </label>
+    <label>Email
+      <input type="email" name="email" />
+    </label>
+    <label>Cargo
+      <input type="text" name="cargo" />
+    </label>
+    <label>Empresa
+      <input type="text" name="nome" />
+    </label>
+    <label>Telefone
+      <input type="text" name="nome" />
+    </label>
+    <button type="submit">Cadastrar</button>
+  </form>
+  <form action="/leads" method="POST">
+    <button type="submit">Listar Leads</button>
+  </form>
+</body>
+</html>
