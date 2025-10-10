@@ -7,7 +7,7 @@ const ListLeadController = require('../controllers/ListLeadController');
 router.post('/novoLead',CreateLeadController.newLead);
 
 router.get('/', (req, res) => {
-        res.render('LeadsCreations', { title: 'Home Page' });
+        res.render('LeadsCreation.ejs', { title: 'Home Page' });
     });
 router.get('/leads',ListLeadController.listLeads);
 

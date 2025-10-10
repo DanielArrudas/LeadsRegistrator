@@ -6,7 +6,8 @@ const router = require('./src/routes/routes');
 const app = express();
 app.use(cors())
 app.use(express.json())
-app.use(router)
+app.use('/a', router);
+app.set('view engine', 'ejs');
 
 app.listen(4000, () =>{
     console.log('Aplicação rodando no http://localhost:4000/')
